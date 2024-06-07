@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="pLevnon.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="masterPage.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="topnav">
+        <a></a>
+        <link href="masterPage.css" rel="stylesheet" />
+    <a href="../Galery.aspx" style="color:snow; height:100px; width:100px">Gallery </a>
+        
+    </div>
+
+
+
+        <%-- <%--<div style ="width:1900px; margin: 0 auto;">  
+             
+              <div style ="width:100%; height:100px;">     
+               
+               <div style ="float:right; height:100px; width:760px; Background-color:black"></div>
+               
+                  <img src="Pics/picflawer.png" alt="תנומת"  width="100%" height="100"/>  
+
+               </div>--%>
+
+       <%--<div style ="float:right; height:900px; width:150px; Background-color:lavender"></div>   
+       <div style ="width:100%; height:100px; Background-color:cornsilk"></div>  
+       <div style ="float:right; height:800px; width:1600px; Background-color:powderblue"></div>--%>--%>
+        
+        
+       
+      <h2>
+    Welcome, <%=Session["clientFullName"] %>
+</h2>
+             <div> 
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+       
+
+           </div> 
+         
+            <%--<div style ="float:right; height:800px; width:150px;  Background-color:indianred"></div> --%>
+            
+            
+       
+    </form>
+</body>
+</html>
